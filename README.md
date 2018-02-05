@@ -12,7 +12,7 @@
 ## Installation
 
 ```bash
-$ composer require germania-kg/PathServiceProvider
+$ composer require germania-kg/pathserviceprovider
 ```
 
 ## Setup
