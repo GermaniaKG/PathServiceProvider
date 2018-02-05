@@ -1,0 +1,34 @@
+{
+	"name": "germania-kg/pathserviceprovider",
+
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Germania\\PathServiceProvider\\": "src/"
+		}
+	},
+
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
+
+	"require": {
+		"pimple/pimple": "^3.0"
+	},
+
+	"require-dev": {
+		"satooshi/php-coveralls": "^1.0",
+		"phpunit/phpunit": "^5.7|^6.0"
+	},
+
+	"suggest": {
+		"germania-kg/pathprefixer": "Callable that prefixes a paths array (or StdClass) with a base directory"
+	}
+}
