@@ -27,10 +27,10 @@ class PathServiceProvider implements ServiceProviderInterface
 
 
     /**
-     * @param array         $paths    Array with paths
+     * @param array         $paths    Optional array with paths
      * @param Callable|null $prefixer Optional callable that prefixes the paths.
      */
-    public function __construct ( array $paths, Callable $prefixer = null)
+    public function __construct ( $paths = array(), Callable $prefixer = null)
     {
         $this->paths = $paths;
         $this->prefixer = $prefixer ?: function( $p ) { return $p; } ;

@@ -26,7 +26,8 @@ $app = new \Slim\App;
 $dic = $app->getContainer();
 $dic = new Pimple\Container;
 
-// B. Register Service Provider.
+// B. Register Service Provider. Paths array is optional.
+$sp = new PathServiceProvider;
 $sp = new PathServiceProvider( [
 	'var',
 	'templates'	
