@@ -3,10 +3,13 @@
 **[Pimple Service Provider](https://pimple.symfony.com/#extending-a-container) for working with directory path strings**
 
 
-[![Build Status](https://travis-ci.org/GermaniaKG/PathServiceProvider.svg?branch=master)](https://travis-ci.org/GermaniaKG/PathServiceProvider)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/?branch=master)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/pathserviceprovider.svg?style=flat)](https://packagist.org/packages/germania-kg/pathserviceprovider)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/pathserviceprovider.svg)](https://packagist.org/packages/germania-kg/pathserviceprovider)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/PathServiceProvider.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/PathServiceProvider)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/PathServiceProvider/build-status/master)
+
 
 
 ## Installation
@@ -77,13 +80,20 @@ Returns the paths array with each element prefixed before:
 $absolute_paths = $dic['Paths.absolute'];
 ```
 
+## Development
+
+```bash
+$ git clone https://github.com/GermaniaKG/PathServiceProvider.git
+$ cd PathServiceProvider
+$ composer install
+```
 
 ## Unit tests
 
-Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
-Run [PhpUnit](https://phpunit.de/) like this:
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
 
 ```bash
+$ composer test
+# or
 $ vendor/bin/phpunit
 ```
-
